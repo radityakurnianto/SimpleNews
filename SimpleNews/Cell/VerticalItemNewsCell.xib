@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VerticalItemNewsCell" id="gTV-IL-0wX" customClass="VerticalItemNewsCell" customModule="SimpleNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3g-P0-jvH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="top-x4-euU">
+                                <rect key="frame" x="16" y="10" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="dak-lN-szi"/>
+                                    <constraint firstAttribute="width" constant="80" id="foy-D0-mjk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boeing, Cyclone Idai, McGregor: Your Wednesday Briefing" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Go-V4-Cka">
+                                <rect key="frame" x="104" y="10" width="255" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="B0U-Ur-3yx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019-03-25T20:00:00-04:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yz-ad-7cs">
+                                <rect key="frame" x="104" y="75" width="255" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="pxU-U4-7y5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let us help you start your day." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvM-1t-AYm">
+                                <rect key="frame" x="104" y="56" width="255" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="Kax-TD-tBV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tvM-1t-AYm" firstAttribute="leading" secondItem="7Go-V4-Cka" secondAttribute="leading" id="GbK-N5-bgi"/>
+                            <constraint firstItem="tvM-1t-AYm" firstAttribute="top" secondItem="7Go-V4-Cka" secondAttribute="bottom" constant="5" id="KE6-6H-f3B"/>
+                            <constraint firstAttribute="trailing" secondItem="7Go-V4-Cka" secondAttribute="trailing" constant="16" id="RuI-78-EKh"/>
+                            <constraint firstItem="7Go-V4-Cka" firstAttribute="leading" secondItem="top-x4-euU" secondAttribute="trailing" constant="8" id="XPR-ZQ-2gG"/>
+                            <constraint firstItem="5yz-ad-7cs" firstAttribute="leading" secondItem="7Go-V4-Cka" secondAttribute="leading" id="Ysm-Cs-c87"/>
+                            <constraint firstItem="5yz-ad-7cs" firstAttribute="bottom" secondItem="top-x4-euU" secondAttribute="bottom" id="brY-Wh-KiS"/>
+                            <constraint firstItem="tvM-1t-AYm" firstAttribute="trailing" secondItem="7Go-V4-Cka" secondAttribute="trailing" id="mM9-fm-CCR"/>
+                            <constraint firstItem="5yz-ad-7cs" firstAttribute="trailing" secondItem="7Go-V4-Cka" secondAttribute="trailing" id="oAp-oA-th5"/>
+                            <constraint firstItem="top-x4-euU" firstAttribute="centerY" secondItem="x3g-P0-jvH" secondAttribute="centerY" id="tAA-mn-GPJ"/>
+                            <constraint firstItem="top-x4-euU" firstAttribute="leading" secondItem="x3g-P0-jvH" secondAttribute="leading" constant="16" id="tsQ-py-sjM"/>
+                            <constraint firstItem="7Go-V4-Cka" firstAttribute="top" secondItem="top-x4-euU" secondAttribute="top" id="xlo-dV-l2m"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="x3g-P0-jvH" secondAttribute="bottom" id="O3J-ch-5QZ"/>
+                <constraint firstAttribute="trailing" secondItem="x3g-P0-jvH" secondAttribute="trailing" id="YIa-VN-eLZ"/>
+                <constraint firstItem="x3g-P0-jvH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rTI-F8-ykC"/>
+                <constraint firstItem="x3g-P0-jvH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vag-Bv-UWV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="375" height="77"/>
+            <connections>
+                <outlet property="dateLabel" destination="5yz-ad-7cs" id="0Kk-UC-3fZ"/>
+                <outlet property="snippetLabel" destination="tvM-1t-AYm" id="mge-jW-zSr"/>
+                <outlet property="thumbnailImageView" destination="top-x4-euU" id="z6A-Sr-0j2"/>
+                <outlet property="titleLabel" destination="7Go-V4-Cka" id="q7S-eX-QNa"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="165.51724137931035"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="213.5" height="160"/>
+    </resources>
+</document>
