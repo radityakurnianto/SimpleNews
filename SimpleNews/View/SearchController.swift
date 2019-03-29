@@ -106,6 +106,9 @@ extension SearchController: UICollectionViewDelegate {
             guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "DetailParentController") as? DetailParentController else { return }
             controller.pageCount = numberOfContent
             controller.selectedIndex = indexPath.row
+            if let contents = viewModel.newsArray {
+                controller.news = contents
+            }
             
             self.navigationController?.pushViewController(controller, animated: true)
         }
